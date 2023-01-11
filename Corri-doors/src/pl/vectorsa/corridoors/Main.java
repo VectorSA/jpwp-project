@@ -4,7 +4,7 @@ package pl.vectorsa.corridoors;
  * Klasa umożliwiająca uruchomienie gry
  */
 public class Main {
-    /*
+    /**
      * Funkcja włączająca gre
      * @param args - nieużywane
      */
