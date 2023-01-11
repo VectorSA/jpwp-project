@@ -80,11 +80,8 @@ class LogikaMagika{
  */
     int ostatniPoziom;
 /**
- *  LogikaMagika - przypisanie poziomu, elementu i interfejsu
- * @param interfejs
- * @param poziom
- * @param ostatniPoziom
- * @param ostatniElement
+ *  LogikaMagika - przypisanie interfejsu
+ * @param interfejs aktywny interfejs użytkownika
  */
     LogikaMagika(Interfejs interfejs) {
         this.interfejs = interfejs;
@@ -94,6 +91,7 @@ class LogikaMagika{
     }
 /**
  *  logika - główna logika gry
+ * @param strona String
  */
     void logika(String strona) {
         int wektor[] = new int[2];
