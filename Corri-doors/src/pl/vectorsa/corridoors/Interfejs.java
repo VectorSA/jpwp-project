@@ -26,6 +26,7 @@ class Rysuj extends JPanel {
     Interfejs interfejs;
 /**
  *  Rysuj - Przypisuje panel graficzny dla mapy w interfejsię użytkownika
+ * @param interfejs
  */
     Rysuj(Interfejs interfejs) {
         super();

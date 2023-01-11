@@ -67,11 +67,24 @@ class LogikaMagika{
  *  Interfejs - aktywny interfejs użytkownika
  */
     Interfejs interfejs;
+/**
+ *  ostatniElement - ostatni aktywny element
+ */
     String ostatniElement;
+/**
+ *  poziom - zmienna, aktualny poziom
+ */
     int poziom;
+/**
+ *  ostatniPoziom - zmienna ostatniego poziomu
+ */
     int ostatniPoziom;
 /**
  *  LogikaMagika - przypisanie poziomu, elementu i interfejsu
+ * @param interfejs
+ * @param poziom
+ * @param ostatniPoziom
+ * @param ostatniElement
  */
     LogikaMagika(Interfejs interfejs) {
         this.interfejs = interfejs;
