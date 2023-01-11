@@ -1,14 +1,13 @@
 package pl.vectorsa.corridoors;
 import javax.swing.JOptionPane;
-import java.lang.Math;
 
 /**
- * Klasa LogikaMagika - odpowiada za logikę gry
+ * Klasa LogikaMagika - odpowiada za logike gry
  */
 class LogikaMagika{
     /**
-     * "00"-ściana "01"-podłoga "02"-drzwi "03"-otwarte_drzwi "04"-pies "05"-klucz "06"-gracz "07"-dźwignia 
-     * "08"-przełączona_dźwignia "09"-wyjście "10"-jedzenie "11"-metalowe_drzwi "12"-otwarte_metalowe_drzwi 
+     * "00"-sciana "01"-podloga "02"-drzwi "03"-otwarte_drzwi "04"-pies "05"-klucz "06"-gracz "07"-dzwignia 
+     * "08"-przelaczona_dzwignia "09"-wyjscie "10"-jedzenie "11"-metalowe_drzwi "12"-otwarte_metalowe_drzwi 
      */
     String mapy[][][]={
         {
@@ -64,7 +63,7 @@ class LogikaMagika{
         },
     };
 /**
- *  Interfejs - aktywny interfejs użytkownika
+ *  Interfejs - aktywny interfejs uzytkownika
  */
     Interfejs interfejs;
 /**
@@ -81,7 +80,7 @@ class LogikaMagika{
     int ostatniPoziom;
 /**
  *  LogikaMagika - przypisanie interfejsu
- * @param interfejs aktywny interfejs użytkownika
+ * @param interfejs aktywny interfejs uzytkownika
  */
     LogikaMagika(Interfejs interfejs) {
         this.interfejs = interfejs;
@@ -90,7 +89,7 @@ class LogikaMagika{
         this.ostatniElement = "01";
     }
 /**
- *  logika - główna logika gry
+ *  logika - glowna logika gry
  * @param strona String
  */
     void logika(String strona) {
@@ -250,7 +249,7 @@ class LogikaMagika{
             mapy[vy][vx] = calyGracz;
             if(poziom==ostatniPoziom) {
                 this.ostatniElement = mapy[vy][vx];
-                JOptionPane.showMessageDialog(null, "Wygrałeś, jeśli chcesz zagrać ponownie, uruchom ponownie grę!");
+                JOptionPane.showMessageDialog(null, "Wygrales, jesli chcesz zagrać ponownie, uruchom ponownie gre!");
             }
             return;
         }

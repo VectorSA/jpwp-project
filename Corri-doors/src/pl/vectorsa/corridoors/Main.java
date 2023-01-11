@@ -1,11 +1,11 @@
 package pl.vectorsa.corridoors;
 
 /**
- * Klasa umożliwiająca uruchomienie gry
+ * Klasa umozliwiajaca uruchomienie gry
  */
 public class Main {
     /**
-     * Funkcja włączająca gre
+     * Funkcja wlaczajaca gre
      * @param args - nieużywane
      */
     public static void main(final String[] args) {

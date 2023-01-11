@@ -21,12 +21,12 @@ import java.awt.image.BufferedImage;
  */
 class Rysuj extends JPanel { 
 /**
- *  Interfejs - aktywny interfejs użytkownika
+ *  Interfejs - aktywny interfejs uzytkownika
  */
     Interfejs interfejs;
 /**
- *  Rysuj - Przypisuje panel graficzny dla mapy w interfejsię użytkownika
- * @param interfejs aktywny interfejs użytkownika
+ *  Rysuj - Przypisuje panel graficzny dla mapy w interfejsie uzytkownika
+ * @param interfejs aktywny interfejs uzytkownika
  */
     Rysuj(Interfejs interfejs) {
         super();
@@ -108,7 +108,7 @@ class Rysuj extends JPanel {
     }
 }
 /**
- *  Klasa Interfejs - aktywny interfejs użytkownika
+ *  Klasa Interfejs - aktywny interfejs uzytkownika
  */
 class Interfejs extends JFrame {
 /**
@@ -116,13 +116,13 @@ class Interfejs extends JFrame {
  */
     Rysuj mapa; // ---------------- Panel rysowania mapy
 /**
- *  JPanel guziory - Panel przycisków
+ *  JPanel guziory - Panel przyciskow
  */
-    JPanel guziory; // ---------------- panel przycisków
+    JPanel guziory; // ---------------- panel przyciskow
 /**
- *  JButton exit - przycisk wyjścia
+ *  JButton exit - przycisk wyjscia
  */
-    JButton exit; // ---------------- przycisk wyjścia
+    JButton exit; // ---------------- przycisk wyjscia
 /**
  *  JButton menu - przycisk menu
  */
@@ -137,7 +137,7 @@ class Interfejs extends JFrame {
     LogikaMagika logika; // ---------------- logika gry
 
 /**
- *  Interfejs - aktywny interfejs użytkownika
+ *  Interfejs - aktywny interfejs uzytkownika
  */
     Interfejs() {
         super("Corri-Doors");
@@ -156,12 +156,12 @@ class Interfejs extends JFrame {
         this.guziory.setLocation(0,0);
         this.guziory.setOpaque(true);
         this.guziory.setBackground(new Color(100,100,100));
-        this.exit = new JButton("WYJŚCIE");
+        this.exit = new JButton("WYJsCIE");
         this.menu = new JButton("MENU");
         this.restart = new JButton("RESTART");
         this.exit.setSize(90,25);
         this.exit.setLocation(850,5);
-        this.exit.addActionListener(new ActionListener(){ // --------- Na słuchiwanie klawiszy WASD
+        this.exit.addActionListener(new ActionListener(){ // --------- Na sluchiwanie klawiszy WASD
 /**
  *  actionPerformed - wykonanie akcji
  */
@@ -175,18 +175,18 @@ class Interfejs extends JFrame {
         this.guziory.add(restart);
         this.menu.setSize(90,25);
         this.menu.setLocation(630,5);
-        // ------------------------------------------ Na słuchiwanie klawiszy WASD
+        // ------------------------------------------ Na sluchiwanie klawiszy WASD
         this.mapa.addKeyListener(new KeyListener(){
 /**
- *  keyTyped - naciśniety przycisk / poruszanie się klawiszami WASD
+ *  keyTyped - nacisniety przycisk / poruszanie sie klawiszami WASD
  */
             public void keyTyped(KeyEvent e) {
                 if (logika.poziom == logika.ostatniPoziom) {
                     mapa.repaint();
 /**
- *  JOptionPane.showMessageDialog - wysyłanie powiadomienia (w tym przypadku o wygranej)
+ *  JOptionPane.showMessageDialog - wysylanie powiadomienia (w tym przypadku o wygranej)
  */
-                    JOptionPane.showMessageDialog(null, "Wygrałeś, jeśli chcesz zagrać ponownie, uruchom ponownie grę!");
+                    JOptionPane.showMessageDialog(null, "Wygrales, jesli chcesz zagrać ponownie, uruchom ponownie gre!");
                     return;
                 }
                 if (Character.toLowerCase(e.getKeyChar()) == 'd') {
@@ -201,11 +201,11 @@ class Interfejs extends JFrame {
                 repaint();
             }
 /**
- *  keyPressed - klawisz wciśnięty
+ *  keyPressed - klawisz wcisniety
  */
-            public void keyPressed(KeyEvent e) {} // ---------- klawisz wciśnięty
+            public void keyPressed(KeyEvent e) {} // ---------- klawisz wcisniety
 /**
- *  keyReleased - klawisz wyciśniety
+ *  keyReleased - klawisz wycisniety
  */
             public void keyReleased(KeyEvent e) {} // ---------- klawisz puszczony
         });
