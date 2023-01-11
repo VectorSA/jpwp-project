@@ -161,6 +161,9 @@ class Interfejs extends JFrame {
         this.exit.setSize(90,25);
         this.exit.setLocation(850,5);
         this.exit.addActionListener(new ActionListener(){ // --------- Na słuchiwanie klawiszy WASD
+/**
+ *  actionPerformed - wykonanie akcji
+ */
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
             }
@@ -173,9 +176,15 @@ class Interfejs extends JFrame {
         this.menu.setLocation(630,5);
         // ------------------------------------------ Na słuchiwanie klawiszy WASD
         this.mapa.addKeyListener(new KeyListener(){
+/**
+ *  keyTyped - naciśniety przycisk / poruszanie się klawiszami WASD
+ */
             public void keyTyped(KeyEvent e) {
                 if (logika.poziom == logika.ostatniPoziom) {
                     mapa.repaint();
+/**
+ *  JOptionPane.showMessageDialog - wysyłanie powiadomienia (w tym przypadku o wygranej)
+ */
                     JOptionPane.showMessageDialog(null, "Wygrałeś, jeśli chcesz zagrać ponownie, uruchom ponownie grę!");
                     return;
                 }

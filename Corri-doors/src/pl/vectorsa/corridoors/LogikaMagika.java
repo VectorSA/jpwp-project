@@ -70,14 +70,18 @@ class LogikaMagika{
     String ostatniElement;
     int poziom;
     int ostatniPoziom;
-
+/**
+ *  LogikaMagika - przypisanie poziomu, elementu i interfejsu
+ */
     LogikaMagika(Interfejs interfejs) {
         this.interfejs = interfejs;
         this.poziom = 0;
         this.ostatniPoziom = 3;
         this.ostatniElement = "01";
     }
-
+/**
+ *  logika - główna logika gry
+ */
     void logika(String strona) {
         int wektor[] = new int[2];
         int graczxy[] = new int[2];
