@@ -9,7 +9,7 @@ public class Main {
      * @param args - nieużywane
      */
     public static void main(final String[] args) {
-        System.out.println("Corri-doors test");
+        System.out.println("Corri-doors");
         Interfejs interfejs = new Interfejs();
     }
 }
