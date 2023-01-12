@@ -50,57 +50,57 @@ class Rysuj extends JPanel {
             for (int j = 0; j < mapa.length; j++) {
                 try {  // ---------------- wrzucenie grafik na panel mapy
                     if (Integer.valueOf(mapa[i][j].substring(0,2).substring(0,2)) == 0) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"wall.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"sciana.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 1) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"floor.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"podloga.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 2) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"drzwi.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 3) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door_opened.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"drzwiotwarte.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 4) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"key.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"pies.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 5) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"key.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"klucz.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 6) {
                         
                         if (Integer.valueOf(mapa[i][j].substring(0,2).substring(0,2)) == 0) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"wall.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"sciana.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 1) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"floor.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"podloga.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 2) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"drzwi.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 3) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door_opened.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"drzwiotwarte.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 4) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"key.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"pies.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 5) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"key.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"klucz.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 7) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"lever.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"dzwignia.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 8) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"lever_toggled.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"dzwignia_przelaczona.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 9) {
                             g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"exit.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 10) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"lever.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"jedzenie.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 11) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"brama.png")), j*64, i*64, null);
                         } else if (Integer.valueOf(this.interfejs.logika.ostatniElement.substring(0,2)) == 12) {
-                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door_opened.png")), j*64, i*64, null);
+                            g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"bramaotwarta.png")), j*64, i*64, null);
                         }
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"player.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"gracz.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 7) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"lever.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"dzwignia.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 8) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"lever_toggled.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"dzwignia_przelaczona.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 9) {
                         g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"exit.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 10) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"lever.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"jedzenie.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 11) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"brama.png")), j*64, i*64, null);
                     } else if (Integer.valueOf(mapa[i][j].substring(0,2)) == 12) {
-                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"door_opened.png")), j*64, i*64, null);
+                        g2.drawImage((BufferedImage)ImageIO.read(new URL(new Main().getClass().getResource("images/").toString()+"bramaotwarta.png")), j*64, i*64, null);
                     }
                 } catch (Exception e) {}
             }
@@ -156,7 +156,7 @@ class Interfejs extends JFrame {
         this.guziory.setLocation(0,0);
         this.guziory.setOpaque(true);
         this.guziory.setBackground(new Color(100,100,100));
-        this.exit = new JButton("WYJsCIE");
+        this.exit = new JButton("WYJSCIE");
         this.menu = new JButton("MENU");
         this.restart = new JButton("RESTART");
         this.exit.setSize(90,25);
